@@ -1,8 +1,7 @@
 <%= if @post do %>
     <div>
         <h2 class="text-4xl font-extrabold"><div><%= @post.title %></div></h2>
-    <p class="mb-3 font-light text-gray-500 dark:text-gray-400"><%= @post.body %> </p>
-
+        <p class="mb-3 font-light text-gray-500 dark:text-gray-400"><%= @post.body %> </p>
         <form phx-submit="add-comment">
             <div class="h-80 px-7 w-[700px] rounded-[12px] bg-white p-4">
                 <p class="text-xl font-semibold text-blue-900 cursor-pointer transition-all hover:text-black">Add Comment</p>
