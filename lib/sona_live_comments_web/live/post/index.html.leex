@@ -20,5 +20,5 @@
 </div>
 
 <%= for post <- @posts do %>
-    <div class="font-medium text-blue-600 dark:text-blue-500 hover:underline">  <%= live_patch post.title, to: Routes.post_show_path(@socket, :show, post.id) %> </div>
+    <div class="font-medium text-blue-600 dark:text-blue-500 hover:underline">  <%= live_redirect post.title, to: Routes.post_show_path(@socket, :show, post.id) %> </div>
 <% end %>
